@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_MUNDIAL_COSUMEL_2016_FORM_LBL_INSCRIPCION_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_MUNDIAL_COSUMEL_2016_FORM_LBL_INSCRIPCION_CREATED_BY"
+            description="COM_MUNDIAL_COSUMEL_2016_FORM_DESC_INSCRIPCION_CREATED_BY"  /> 
+
+       <field name="last_name" type="text"
+                
+            label="COM_MUNDIAL_COSUMEL_2016_FORM_LBL_INSCRIPCION_LAST_NAME"
+            description="COM_MUNDIAL_COSUMEL_2016_FORM_DESC_INSCRIPCION_LAST_NAME" 
+                
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2231318"
+            heading="h4"
+            close="true"
+            size="50"
+            maxlength="50"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="name" type="text"
+                
+            label="COM_MUNDIAL_COSUMEL_2016_FORM_LBL_INSCRIPCION_NAME"
+            description="COM_MUNDIAL_COSUMEL_2016_FORM_DESC_INSCRIPCION_NAME" 
+                
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2231318"
+            heading="h4"
+            close="true"
+            size="50"
+            maxlength="50"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+ <field name="gender" type="foreignkey" class="inputbox"
+            label="COM_MUNDIAL_COSUMEL_2016_FORM_LBL_INSCRIPCION_GENDER"
+            description="COM_MUNDIAL_COSUMEL_2016_FORM_DESC_INSCRIPCION_GENDER" input_type="list" table="#__mc2016_gender" key_field="id" value_field="name"  required="true"  /> 
+
+       <field name="birthdate" type="calendar" class="inputbox"
+         required="true" 
+        
+         default="0000-00-00" 
+        
+            label="COM_MUNDIAL_COSUMEL_2016_FORM_LBL_INSCRIPCION_BIRTHDATE"
+            description="COM_MUNDIAL_COSUMEL_2016_FORM_DESC_INSCRIPCION_BIRTHDATE" 
+        filter="safehtml" /> 
+
+ <field name="event" type="foreignkey" class="inputbox"
+            label="COM_MUNDIAL_COSUMEL_2016_FORM_LBL_INSCRIPCION_EVENT"
+            description="COM_MUNDIAL_COSUMEL_2016_FORM_DESC_INSCRIPCION_EVENT" input_type="list" table="#__mc2016_event" key_field="id" value_field="name"  required="true"  /> 
+
+       <field name="email" type="text"
+                
+            label="COM_MUNDIAL_COSUMEL_2016_FORM_LBL_INSCRIPCION_EMAIL"
+            description="COM_MUNDIAL_COSUMEL_2016_FORM_DESC_INSCRIPCION_EMAIL" 
+                
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2231318"
+            heading="h4"
+            close="true"
+            size="100"
+            maxlength="256"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="phone" type="text"
+                
+            label="COM_MUNDIAL_COSUMEL_2016_FORM_LBL_INSCRIPCION_PHONE"
+            description="COM_MUNDIAL_COSUMEL_2016_FORM_DESC_INSCRIPCION_PHONE" 
+                
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2231318"
+            heading="h4"
+            close="true"
+            size="100"
+            maxlength="100"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+ <field name="tshirt" type="foreignkey" class="inputbox"
+            label="COM_MUNDIAL_COSUMEL_2016_FORM_LBL_INSCRIPCION_TSHIRT"
+            description="COM_MUNDIAL_COSUMEL_2016_FORM_DESC_INSCRIPCION_TSHIRT" input_type="list" table="#__mc2016_tshirt" key_field="id" value_field="name"  required="true"  /> 
+
+       <field name="filter_tshirt" type="sql" class="inputbox"
+            onchange="this.form.submit();" translate="true"
+            query="SELECT 0 AS `id`, 'COM_MUNDIAL_COSUMEL_2016_INSCRIPCIONS_TSHIRT_FILTER_DEFAULT_OPTION' AS `val` UNION SELECT `id`, `name` AS val FROM `#__mc2016_tshirt`" key_field="id" value_field="val"
+             /> 
+
+       <field name="emergency_contact" type="text"
+                
+            label="COM_MUNDIAL_COSUMEL_2016_FORM_LBL_INSCRIPCION_EMERGENCY_CONTACT"
+            description="COM_MUNDIAL_COSUMEL_2016_FORM_DESC_INSCRIPCION_EMERGENCY_CONTACT" 
+                
+                
+                 required="true" 
+            size="100"
+            maxlength="100" /> 
+
+       <field name="emergency_phone" type="text"
+                
+            label="COM_MUNDIAL_COSUMEL_2016_FORM_LBL_INSCRIPCION_EMERGENCY_PHONE"
+            description="COM_MUNDIAL_COSUMEL_2016_FORM_DESC_INSCRIPCION_EMERGENCY_PHONE" 
+                
+                
+                 required="true" 
+            menu_published="0"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2231318"
+            heading="h4"
+            close="true"
+            size="100"
+            maxlength="100"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="allergies" type="textarea"
+                
+            label="COM_MUNDIAL_COSUMEL_2016_FORM_LBL_INSCRIPCION_ALLERGIES"
+            description="COM_MUNDIAL_COSUMEL_2016_FORM_DESC_INSCRIPCION_ALLERGIES" 
+                
+                
+                 required="true" 
+            cols="10"
+            rows="10"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+ <field name="blood_type" type="foreignkey" class="inputbox"
+            label="COM_MUNDIAL_COSUMEL_2016_FORM_LBL_INSCRIPCION_BLOOD_TYPE"
+            description="COM_MUNDIAL_COSUMEL_2016_FORM_DESC_INSCRIPCION_BLOOD_TYPE" input_type="list" table="#__mc2016_blood_type" key_field="id" value_field="name"  required="true"  /> 
+
+       <field name="filter_blood_type" type="sql" class="inputbox"
+            onchange="this.form.submit();" translate="true"
+            query="SELECT 0 AS `id`, 'COM_MUNDIAL_COSUMEL_2016_INSCRIPCIONS_BLOOD_TYPE_FILTER_DEFAULT_OPTION' AS `val` UNION SELECT `id`, `name` AS val FROM `#__mc2016_blood_type`" key_field="id" value_field="val"
+             /> 
+
+       <field name="hotel" type="textarea"
+                
+            label="COM_MUNDIAL_COSUMEL_2016_FORM_LBL_INSCRIPCION_HOTEL"
+            description="COM_MUNDIAL_COSUMEL_2016_FORM_DESC_INSCRIPCION_HOTEL" 
+                
+                
+                 required="true" 
+            menu_published="0"
+            cols="10"
+            rows="10"
+            filter="raw"
+            directory_stripext="true"
+            directory_hidenode="true"
+            directory_hidedefault="true"
+            alias_generator="2231318"
+            heading="h4"
+            close="true"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        <option value="2">JARCHIVED</option>
+        <option value="-2">JTRASHED</option>
+    </field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>
